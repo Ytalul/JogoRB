@@ -46,7 +46,7 @@ SaveConfig *Load(){
     FILE *Carregar = fopen("ArquivoDeSave.csv", "r");   
     SaveConfig *Dados = malloc(sizeof(SaveConfig));
     if (Carregar == NULL) {
-        // Se o arquivo não existe, cria o arquivo com os valores padrão
+        // Se o arquivo não existe eu acho, cria o arquivo com os valores padrão
         Carregar = fopen("ArquivoDeSave.csv", "w");
         fprintf(Carregar, "30;30;1;");
         fclose(Carregar);
